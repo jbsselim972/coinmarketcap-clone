@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import Header from '../components/Header'
 import Trending from '../components/Trending'
+import CMCTable from '../components/cmc-table/CMCTable'
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
       <div className="mt-10" />
       <Trending />
       <div className="mt-20" />
-      {/**<CMCtable/> */}
+      <CMCTable />
     </div>
   )
 }
