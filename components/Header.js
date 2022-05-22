@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Search from '../assets/svg/search'
 import { ConnectButton } from 'web3uikit'
+import { useRouter } from 'next/router'
 
 const styles = {
   header: `bg-[#17171A] text-white h-20 flex gap-[100px] w-full p-[30px]`,
@@ -14,9 +15,12 @@ const styles = {
   input: `bg-transparent outline-none text-white w-70 ml-3`,
 }
 const Header = () => {
+  const router = useRouter()
   return (
     <div className={styles.header}>
       <Image
+        className="cursor-pointer"
+        onClick={() => router.push('/')}
         src="https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_white_1.svg"
         alt="logo"
         width={220}
