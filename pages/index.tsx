@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import Header from '../components/Header'
+import SwapCryptoModal from '../components/SwapCryptoModal'
 import Trending from '../components/Trending'
 import CMCTable from '../components/cmc-table/CMCTable'
 
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <SwapCryptoModal />
       <div className="mt-10" />
       <Trending />
       <div className="mt-20" />
